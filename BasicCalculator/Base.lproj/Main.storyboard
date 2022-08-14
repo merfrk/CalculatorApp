@@ -84,7 +84,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="divisionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBE-PU-fEk"/>
+                                                    <action selector="operationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wjz-po-mZX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -137,7 +137,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="multiplicationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dy1-6E-bQZ"/>
+                                                    <action selector="operationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQ3-0R-5hP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -190,7 +190,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="minusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPj-Ge-rf2"/>
+                                                    <action selector="operationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIb-2S-MDi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -243,7 +243,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="addClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aY-Jl-NfN"/>
+                                                    <action selector="operationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WDT-r0-LEj"/>
                                                 </connections>
                                             </button>
                                         </subviews>

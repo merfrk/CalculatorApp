@@ -69,32 +69,20 @@ class ViewController: UIViewController {
         resultLabel.text! = String(newResult)
     }
     
-    @IBAction func addClicked(_ sender: Any) {
-        firstPart = resultLabel.text!
-        resultLabel.text! = ""
-        firstNumber = Double(firstPart!)!
-        operationType = .addition
-    }
     
-    @IBAction func minusClicked(_ sender: Any) {
+    @IBAction func operationClicked(_ sender: UIButton) {
         firstPart = resultLabel.text!
         resultLabel.text! = ""
         firstNumber = Double(firstPart!)!
-        operationType = .subtraction
-    }
-    
-    @IBAction func multiplicationClicked(_ sender: Any) {
-        firstPart = resultLabel.text!
-        resultLabel.text! = ""
-        firstNumber = Double(firstPart!)!
-        operationType = .multiplication
-    }
-    
-    @IBAction func divisionClicked(_ sender: Any) {
-        firstPart = resultLabel.text!
-        resultLabel.text! = ""
-        firstNumber = Double(firstPart!)!
-        operationType = .division
+        if sender.titleLabel?.text! == "+"{
+            operationType = .addition
+        }else if sender.titleLabel?.text! == "-"{
+            operationType = .subtraction
+        }else if sender.titleLabel?.text! == "x"{
+            operationType = .multiplication
+        }else if sender.titleLabel?.text! == "÷"{
+            operationType = .division
+        }
     }
     
     @IBAction func calculate(_ sender: Any) {
@@ -123,7 +111,7 @@ class ViewController: UIViewController {
             resultLabel.text! = String(Int(result!))
         }else{
             resultLabel.text! = String(format: "%.2f", result!)
-        }   
+        }
     }
 }
 
