@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     @IBAction func numberPadClicked(_ sender: UIButton) {
         let font = UIFont(name: "Helvetica", size: 30)
         
-        if resultLabel.text! == "0" && sender.titleLabel?.text! != "."{
+        if (resultLabel.text! == "0" && sender.titleLabel?.text! != ".") || resultLabel.text! == "NaN"{
             resultLabel.text! = ""
         }
         
@@ -76,6 +76,27 @@ class ViewController: UIViewController {
         operationType = .addition
     }
     
+    @IBAction func minusClicked(_ sender: Any) {
+        firstPart = resultLabel.text!
+        resultLabel.text! = ""
+        firstNumber = Double(firstPart!)!
+        operationType = .subtraction
+    }
+    
+    @IBAction func multiplicationClicked(_ sender: Any) {
+        firstPart = resultLabel.text!
+        resultLabel.text! = ""
+        firstNumber = Double(firstPart!)!
+        operationType = .multiplication
+    }
+    
+    @IBAction func divisionClicked(_ sender: Any) {
+        firstPart = resultLabel.text!
+        resultLabel.text! = ""
+        firstNumber = Double(firstPart!)!
+        operationType = .division
+    }
+    
     @IBAction func calculate(_ sender: Any) {
         secondPart = String(resultLabel.text!)
         secondNumber = Double(secondPart!)!
@@ -84,18 +105,25 @@ class ViewController: UIViewController {
         case .addition:
             result = firstNumber! + secondNumber!
         case .none:
-            print("")
+            break
         case .subtraction:
-            print("")
+            result = firstNumber! - secondNumber!
         case .multiplication:
-            print("")
+            result = firstNumber! * secondNumber!
         case .division:
-            print("")
+            if secondNumber == 0{
+                result = -1
+            }else{
+                result = firstNumber! / secondNumber!
+            }
         }
-        
-        resultLabel.text! = String(result!)
+        if result! == -1{
+            resultLabel.text! = "NaN"
+        }else if floor(result!) == result!{
+            resultLabel.text! = String(Int(result!))
+        }else{
+            resultLabel.text! = String(format: "%.2f", result!)
+        }   
     }
-    
-    
 }
 

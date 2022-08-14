@@ -83,6 +83,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="÷">
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="divisionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBE-PU-fEk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -133,6 +136,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="x">
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="multiplicationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dy1-6E-bQZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -183,6 +189,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="minusClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPj-Ge-rf2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
