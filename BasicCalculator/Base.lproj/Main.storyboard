@@ -59,6 +59,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="+/-">
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reverseSign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26L-1A-hPP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8C-NW-ywy">
                                                 <rect key="frame" x="207.5" y="0.0" width="103" height="135.5"/>
@@ -68,6 +71,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="%">
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="percentClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEa-f8-QJJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uay-My-uQN">
                                                 <rect key="frame" x="311.5" y="0.0" width="102.5" height="135.5"/>
@@ -92,7 +98,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qkd-Qc-8g8"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nf9-aL-2XZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-ZF-hiY">
@@ -104,7 +110,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUj-kq-U9q"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhS-oP-hAs"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAR-vS-EUc">
@@ -116,7 +122,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffY-H2-WlW"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKk-EW-eS8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2p-fj-qzq">
@@ -142,7 +148,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sUe-P0-xFB"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yI4-gE-KFT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLw-eh-AEr">
@@ -154,7 +160,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y12-Ut-KD0"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSu-84-bJu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7v-83-QaI">
@@ -166,7 +172,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwL-wL-4K2"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFx-iZ-1lo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWB-V3-bkG">
@@ -192,7 +198,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQs-St-eAY"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ctk-bo-Rmh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHQ-bZ-KcQ">
@@ -204,7 +210,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRV-7K-tND"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H27-jd-fto"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZs-Zs-t0c">
@@ -216,7 +222,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ke-99-4ue"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PO1-5l-Km8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-JK-lC0">
@@ -227,6 +233,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aY-Jl-NfN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -242,7 +251,7 @@
                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Toa-at-gX8"/>
+                                                    <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="amy-hS-21E"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="j6U-BY-ygv">
@@ -253,11 +262,11 @@
                                                         <color key="backgroundColor" name="numberColor"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title=",">
+                                                        <buttonConfiguration key="configuration" style="plain" title=".">
                                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="changeAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbG-mF-bXV"/>
+                                                            <action selector="numberPadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkd-0F-eR6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIE-mM-3rg">
@@ -268,6 +277,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="=">
                                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q52-mu-CUU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -287,6 +299,7 @@
                     </view>
                     <connections>
                         <outlet property="clearButton" destination="0w4-V2-QNi" id="464-OE-7yg"/>
+                        <outlet property="resultLabel" destination="9Vb-eB-fKP" id="Opt-Z9-hCo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
